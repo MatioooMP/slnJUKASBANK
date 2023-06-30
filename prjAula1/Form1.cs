@@ -1,4 +1,5 @@
 using System.Numerics;
+using prjAula1.Classes;
 
 namespace prjAula1
 {
@@ -104,7 +105,10 @@ namespace prjAula1
                     lblMensagem.Text = "Usuário inválido";
 
                 }
+
             }
+            Conta minhaconta = new Conta();
+            
         }
     }
 }

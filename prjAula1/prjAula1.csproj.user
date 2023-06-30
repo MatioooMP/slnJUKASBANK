@@ -16,6 +16,9 @@
     <Compile Update="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="T:\Publica\TURMA_TI48N\A.Graciolli\forms Jucas Bank\jucas.cs">
       <SubType>Form</SubType>
     </Compile>

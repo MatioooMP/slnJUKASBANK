@@ -183,7 +183,7 @@
             Controls.Add(txtSenha);
             Cursor = Cursors.Hand;
             Name = "Form1";
-            Text = "Hello Word2";
+            Text = "Tela Login";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

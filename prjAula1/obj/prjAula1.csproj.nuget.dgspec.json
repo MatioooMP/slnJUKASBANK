@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matheus.mpereira17\\Downloads\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj": {}
+    "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matheus.mpereira17\\Downloads\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj": {
+    "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matheus.mpereira17\\Downloads\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj",
+        "projectUniqueName": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj",
         "projectName": "prjAula1",
-        "projectPath": "C:\\Users\\matheus.mpereira17\\Downloads\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj",
+        "projectPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUCAS\\slnJUCAS\\prjAula1\\prjAula1.csproj",
         "packagesPath": "C:\\Users\\matheus.mpereira17\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matheus.mpereira17\\Downloads\\slnJUCAS\\slnJUCAS\\prjAula1\\obj\\",
+        "outputPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUCAS\\slnJUCAS\\prjAula1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matheus.mpereira17\\AppData\\Roaming\\NuGet\\NuGet.Config",
