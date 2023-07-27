@@ -15,7 +15,7 @@ namespace prjAula1.Classes
 
         public double Saldo { get; set; }
 
-        public string Status { get; set; } 
+        public string? Status { get; set; } 
 
         public double Limite { get; set; }
 
@@ -23,14 +23,22 @@ namespace prjAula1.Classes
 
         public DateTime DataFechamento { get; set; }
 
-        public Conta(int idConta, int idCliente, double saldo, string status, double limite, DateTime dataAbertura)
+       public Conta(int idConta, int idCliente, double saldo, string status, double limite, DateTime dataAbertura)
         {
-            this.IdConta = idConta;
-            this.IdCliente = idCliente;
-            this.Saldo = saldo;
-            this.Status = status;
-            this.Limite = limite;
-            this.DataAbertura = dataAbertura;
+           this.IdConta = idConta;
+           this.IdCliente = idCliente;
+           this.Saldo = saldo;
+           this.Status = status;
+           this.Limite = limite;
+           this.DataAbertura = dataAbertura;    
         }
-                 
+
+        public double Depositar(double valorDeposito)
+        { 
+            //this.Saldo += valorDeposito;
+            this.Saldo = this.Saldo + valorDeposito;
+            return this.Saldo;
+        }
     }
+    
+}

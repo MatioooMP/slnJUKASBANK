@@ -107,7 +107,7 @@ namespace prjAula1
                 }
 
             }
-            Conta minhaconta = new Conta();
+            
             
         }
     }
