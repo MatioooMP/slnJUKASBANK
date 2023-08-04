@@ -33,8 +33,25 @@ namespace prjAula1
 
         public void btnDepositar_Click(object sender, EventArgs e)
         {
-            minhaConta.Depositar(Convert.ToDouble(valorDeposito.Text));
-            MessageBox.Show(minhaConta.Saldo.ToString(), "Novo Saldo");
+            if (double.TryParse(valorDeposito.Text, out var res) == false)
+            {
+                MessageBox.Show("Valor incorreto para depósito!");
+            }
+            else 
+            {
+                try
+                {
+                    lblSaldo.Text = $"Saldo: R$ {minhaConta.Depositar(Convert.ToDouble(valorDeposito.Text)).ToString("n2")}";
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    
+                }
+            }
+            //minhaConta.Depositar(Convert.ToDouble(valorDeposito.Text));
+            //MessageBox.Show(minhaConta.Saldo.ToString(), "Novo Saldo");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,7 +87,8 @@ namespace prjAula1
 
         private void btnValorSaldo_Click(object sender, EventArgs e)
         {
-            lblSaldo.Text = $"Saldo: R$ {minhaConta.Saldo.ToString("n2")}";
+            //lblSaldo.Text = $"Saldo: R$ {minhaConta.Saldo.ToString("n2")}";
+            lblSaldo.Text = minhaConta.MostrarSaldo();
         }
     }
 }

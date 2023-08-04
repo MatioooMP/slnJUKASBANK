@@ -59,6 +59,11 @@ namespace prjAula1.Classes
 
         }
 
+        public string MostrarSaldo() 
+        {
+           return  $"Saldo: R$ {Saldo.ToString("n2")}";
+        }
+
 
     }
 }
