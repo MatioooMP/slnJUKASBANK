@@ -11,7 +11,7 @@ namespace prjAula1.Classes
         
         private int _id;
 
-        private string nomeCliente { get; set; }
+        public string nomeCliente { get; set; }
         public int Id
         {
             get
@@ -26,9 +26,15 @@ namespace prjAula1.Classes
                 }
                 else
                 {
-                    this.Id = value;
+                    this._id = value;
                 }
             }
+        }
+
+        public Cliente(string nomecliente, int id) 
+        {
+            this.nomeCliente = nomecliente;
+            this.Id = id;
         }
     }
 }

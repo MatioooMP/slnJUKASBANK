@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            txtId = new TextBox();
             txtNome = new TextBox();
             btnAdicionar = new Button();
             btnListar = new Button();
-            listBox1 = new ListBox();
+            lstClientes = new ListBox();
             SuspendLayout();
             // 
-            // textBox1
+            // txtId
             // 
-            textBox1.Location = new Point(12, 30);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            txtId.Location = new Point(12, 30);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(100, 23);
+            txtId.TabIndex = 0;
             // 
             // txtNome
             // 
@@ -67,26 +67,27 @@
             btnListar.TabIndex = 4;
             btnListar.Text = "Listar";
             btnListar.UseVisualStyleBackColor = true;
+            btnListar.Click += btnListar_Click;
             // 
-            // listBox1
+            // lstClientes
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(12, 192);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(521, 214);
-            listBox1.TabIndex = 5;
+            lstClientes.FormattingEnabled = true;
+            lstClientes.ItemHeight = 15;
+            lstClientes.Location = new Point(12, 192);
+            lstClientes.Name = "lstClientes";
+            lstClientes.Size = new Size(521, 214);
+            lstClientes.TabIndex = 5;
             // 
             // FormCollection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(545, 425);
-            Controls.Add(listBox1);
+            Controls.Add(lstClientes);
             Controls.Add(btnListar);
             Controls.Add(btnAdicionar);
             Controls.Add(txtNome);
-            Controls.Add(textBox1);
+            Controls.Add(txtId);
             Name = "FormCollection";
             Text = " Cliente";
             Load += FormCollection_Load;
@@ -96,10 +97,10 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtId;
         private TextBox txtNome;
         private Button btnAdicionar;
         private Button btnListar;
-        private ListBox listBox1;
+        private ListBox lstClientes;
     }
 }

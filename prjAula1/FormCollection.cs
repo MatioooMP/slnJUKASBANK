@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prjAula1.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace prjAula1
 {
     public partial class FormCollection : Form
     {
+        List<Cliente> Clientes = new List<Cliente>();
         public FormCollection()
         {
             InitializeComponent();
@@ -20,12 +22,35 @@ namespace prjAula1
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
 
+
+
+
+            try
+            {
+                Cliente cliente = new Cliente(txtNome.Text, Convert.ToInt32(txtId.Text));
+                MessageBox.Show($"Cliente Adicionado com sucesso \n{cliente.Id} : {cliente.nomeCliente} ",
+                    "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clientes.Add(cliente);
+            }
+            catch (FormatException ex)
+            {
+
+                MessageBox.Show($"{ex}Formato inválido");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
+            txtId.Clear();
+            txtNome.Clear();
+            txtId.Focus();
         }
 
         private void FormCollection_Load(object sender, EventArgs e)
         {
             //declarando e criando vetores
-            string[] meuArrayString = new string[3];
+            /*string[] meuArrayString = new string[3];
             //declarando e criando vetores com valores
             int[] meuArrayInt = { 2, 3, 7, 9, 10 };
 
@@ -41,7 +66,25 @@ namespace prjAula1
                 mensagemFinal = mensagemFinal + ($"{meuArrayString[contador]}\n");
             }
 
-            MessageBox.Show(mensagemFinal);
+            MessageBox.Show(mensagemFinal);*/
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            foreach (var cliente in Clientes)
+            {
+                lstClientes.Items.Clear();
+                //MessageBox.Show($"{cliente.Id}:{cliente.nomeCliente}");
+                lstClientes.Items.Add($"{cliente.nomeCliente}-{cliente.Id}");
+
+            }
+            for (int i = 0; i  < Clientes.Count; i ++)
+            {
+                lstClientes.Items.Add($"{Clientes[i].Id}-{Clientes[i].nomeCliente}");     
+            }
+
+            //Clientes[2].nomeCliente = "Pepito";
+            //MessageBox.Show(Clientes[2].nomeCliente);
         }
     }
 }
