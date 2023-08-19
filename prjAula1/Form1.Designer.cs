@@ -132,9 +132,9 @@
             label2.ForeColor = Color.HotPink;
             label2.Location = new Point(319, 523);
             label2.Name = "label2";
-            label2.Size = new Size(77, 15);
+            label2.Size = new Size(78, 15);
             label2.TabIndex = 10;
-            label2.Text = "JUKA'S BANK";
+            label2.Text = "JUCA'S BANK";
             label2.Click += label2_Click_2;
             // 
             // btnacessar

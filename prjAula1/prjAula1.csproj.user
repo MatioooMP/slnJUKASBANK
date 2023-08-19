@@ -22,6 +22,9 @@
     <Compile Update="FormCollection.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SenhaPerdida.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="T:\Publica\TURMA_TI48N\A.Graciolli\forms Jucas Bank\jucas.cs">
       <SubType>Form</SubType>
     </Compile>
