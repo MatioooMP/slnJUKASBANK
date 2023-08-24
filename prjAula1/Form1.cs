@@ -1,3 +1,6 @@
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Numerics;
 using prjAula1.Classes;
 
@@ -79,34 +82,23 @@ namespace prjAula1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //Criando uma conexão
+            SqlConnection conexao =
+            new SqlConnection(ConfigurationManager.ConnectionStrings["prjAula1.Properties.Settings.strConexao"].ToString());
+            SqlDataReader leitor; //declarando uma variável do tipo leitor de dados
 
-            if (txtcpf.TextLength < 11 || txtSenha.TextLength < 6)
+            //Criando um comando
+            SqlCommand cmd = new SqlCommand();
 
-            {
-                lblMensagem.Text = "Preencha o campo corretamente";
-            }
+            //criando texto do comando, tipo e conexão que será usada
+            cmd.CommandText = "psValidaLogin";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = conexao;
 
-            else
-
-            {
-                if (txtcpf.Text == "12312312312" && txtSenha.Text == "123456")
-
-                {
-                    lblMensagem.Text = "Usuário valido";
-                    var telamenu = new Form2();
-                    this.Hide();
-                    telamenu.Show();
-                }
-
-                else
-
-                {
-
-                    lblMensagem.Text = "Usuário inválido";
-
-                }
-
-            }
+            //passando parâmetros necessários
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("cpf", txtcpf.Text);
+            cmd.Parameters.AddWithValue("senha", txtSenha.Text); 
 
 
         }

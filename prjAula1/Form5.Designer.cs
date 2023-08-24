@@ -139,7 +139,7 @@
             txtUsuario.PlaceholderText = "valor";
             txtUsuario.Size = new Size(195, 33);
             txtUsuario.TabIndex = 35;
-            txtUsuario.TextChanged += txtUsuario_TextChanged;
+            //txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // button2
             // 
