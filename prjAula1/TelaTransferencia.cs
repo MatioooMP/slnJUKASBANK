@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class Form5 : Form
+    public partial class TelaTransferencia : Form
     {
-        public Form5()
+        public TelaTransferencia()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace prjAula1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var telamenu = new Form2();
+            var telamenu = new TelaMenu();
             this.Hide();
             telamenu.Show();
         }

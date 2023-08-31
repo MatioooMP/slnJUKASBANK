@@ -1,6 +1,6 @@
 ﻿namespace prjAula1
 {
-    partial class Form1
+    partial class TelaLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             txtSenha = new TextBox();
             txtcpf = new TextBox();
             aqui = new Label();

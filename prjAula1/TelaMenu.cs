@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class Form2 : Form
+    public partial class TelaMenu : Form
     {
-        public class Cliente : Form3
+        public class Cliente : TelaCadastrar
         {
 
 
@@ -22,7 +22,7 @@ namespace prjAula1
 
             }
         }
-        public Form2()
+        public TelaMenu()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace prjAula1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var telamenu = new Form1();
+            var telamenu = new TelaLogin();
             this.Hide();
             telamenu.Show();
         }
@@ -56,7 +56,7 @@ namespace prjAula1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var tranferencia = new Form5();
+            var tranferencia = new TelaTransferencia();
             this.Hide();
             tranferencia.Show();
         }

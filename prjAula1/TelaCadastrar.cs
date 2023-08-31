@@ -13,13 +13,13 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class Form3 : Form
+    public partial class TelaCadastrar : Form
     {
         public string Nome { get; set; }
 
 
 
-        public Form3()
+        public TelaCadastrar()
         {
             InitializeComponent();
         }
@@ -50,12 +50,12 @@ namespace prjAula1
                 else
                 {
                     MessageBox.Show("Cadastrado!");
-                    Form3 dados = new Form3();
+                    TelaCadastrar dados = new TelaCadastrar();
                     string nome = txtNome.Text;
 
 
 
-                    var menu = new Form2();
+                    var menu = new TelaMenu();
 
                     this.Hide();
                     menu.Show();
@@ -65,7 +65,7 @@ namespace prjAula1
 
             
         }
-        class Cliente : Form3
+        class Cliente : TelaCadastrar
         {
             
 

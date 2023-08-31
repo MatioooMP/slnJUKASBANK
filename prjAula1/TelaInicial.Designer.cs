@@ -1,6 +1,6 @@
 ﻿namespace prjAula1
 {
-    partial class Form6
+    partial class TelaInicial
     {
         /// <summary>
         /// Required designer variable.
@@ -49,21 +49,21 @@
             // loginToolStripMenuItem
             // 
             loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(113, 19);
+            loginToolStripMenuItem.Size = new Size(118, 19);
             loginToolStripMenuItem.Text = "Login";
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
             // 
             // cadastroToolStripMenuItem
             // 
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(113, 19);
+            cadastroToolStripMenuItem.Size = new Size(118, 19);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
             // menuToolStripMenuItem
             // 
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(113, 19);
+            menuToolStripMenuItem.Size = new Size(118, 19);
             menuToolStripMenuItem.Text = "Menu";
             menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
@@ -74,7 +74,7 @@
             saqueToolStripMenuItem.Text = "Saque/Transferência";
             saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click;
             // 
-            // Form6
+            // TelaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,7 +82,7 @@
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
-            Name = "Form6";
+            Name = "TelaInicial";
             Text = "Form6";
             Load += Form6_Load;
             menuStrip1.ResumeLayout(false);

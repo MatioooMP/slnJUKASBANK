@@ -14,7 +14,7 @@ namespace prjAula1
 
     public partial class Extra : Form
     {
-        Conta minhaConta;
+        ContaPastaClasses minhaConta;
         public Extra()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace prjAula1
 
         public void Extra_Load(object sender, EventArgs e)
         {
-            minhaConta = new Conta
+            minhaConta = new ContaPastaClasses
                (2, 2, 1000, "Ativa", 1000, DateTime.Now);
         }
 

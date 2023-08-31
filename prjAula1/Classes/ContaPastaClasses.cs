@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace prjAula1.Classes
 {
-    public class Conta
+    public class ContaPastaClasses
     {
         public int IdConta { get; set; }
 
@@ -23,7 +23,7 @@ namespace prjAula1.Classes
 
         public DateTime DataFechamento { get; set; }
 
-        public Conta(int idConta, int idCliente, double saldo, string status, double limite, DateTime dataAbertura)
+        public ContaPastaClasses(int idConta, int idCliente, double saldo, string status, double limite, DateTime dataAbertura)
         {
             this.IdConta = idConta;
             this.IdCliente = idCliente;

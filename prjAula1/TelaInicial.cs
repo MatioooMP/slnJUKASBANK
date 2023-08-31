@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class Form6 : Form
+    public partial class TelaInicial : Form
     {
-        public Form6()
+        public TelaInicial()
         {
             InitializeComponent();
         }
@@ -24,28 +24,28 @@ namespace prjAula1
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 janelaCadastro = new Form3();
+            TelaCadastrar janelaCadastro = new TelaCadastrar();
             janelaCadastro.MdiParent = this;
             janelaCadastro.Show();
         }
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 janelaMenu = new Form2();
+            TelaMenu janelaMenu = new TelaMenu();
             janelaMenu.MdiParent = this;
             janelaMenu.Show();
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 janelaLogin = new Form1();
+            TelaLogin janelaLogin = new TelaLogin();
             janelaLogin.MdiParent = this;
             janelaLogin.Show();
         }
 
         private void saqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 janelaTransferencia = new Form5();
+            TelaTransferencia janelaTransferencia = new TelaTransferencia();
             janelaTransferencia.MdiParent = this;
             janelaTransferencia.Show();
         }

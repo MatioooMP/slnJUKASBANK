@@ -1,6 +1,6 @@
 ﻿namespace prjAula1
 {
-    partial class Form5
+    partial class TelaTransferencia
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaTransferencia));
             radioButton3 = new RadioButton();
             radioButton1 = new RadioButton();
             label1 = new Label();
