@@ -146,6 +146,16 @@
             "rid": "win"
           }
         }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -462,10 +472,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "DTO >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -495,7 +511,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUKASBANK\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUKASBANK\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

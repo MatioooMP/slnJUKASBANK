@@ -36,11 +36,10 @@
             txtCpfCadastro = new TextBox();
             txtDataNascimento = new TextBox();
             txtEmail = new TextBox();
-            rbOutro = new RadioButton();
-            rbFeminino = new RadioButton();
-            rbMasculino = new RadioButton();
             button2 = new Button();
             pictureBox2 = new PictureBox();
+            txtEstado = new TextBox();
+            txtCidade = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -51,7 +50,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Location = new Point(191, 89);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(352, 244);
+            pictureBox1.Size = new Size(352, 310);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
@@ -117,48 +116,6 @@
             txtEmail.Size = new Size(217, 33);
             txtEmail.TabIndex = 24;
             // 
-            // rbOutro
-            // 
-            rbOutro.AutoSize = true;
-            rbOutro.BackColor = Color.Transparent;
-            rbOutro.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            rbOutro.ForeColor = Color.DeepPink;
-            rbOutro.Location = new Point(422, 339);
-            rbOutro.Name = "rbOutro";
-            rbOutro.Size = new Size(76, 29);
-            rbOutro.TabIndex = 27;
-            rbOutro.TabStop = true;
-            rbOutro.Text = "outro";
-            rbOutro.UseVisualStyleBackColor = false;
-            // 
-            // rbFeminino
-            // 
-            rbFeminino.AutoSize = true;
-            rbFeminino.BackColor = Color.Transparent;
-            rbFeminino.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            rbFeminino.ForeColor = Color.DeepPink;
-            rbFeminino.Location = new Point(248, 339);
-            rbFeminino.Name = "rbFeminino";
-            rbFeminino.Size = new Size(105, 29);
-            rbFeminino.TabIndex = 28;
-            rbFeminino.TabStop = true;
-            rbFeminino.Text = "feminino";
-            rbFeminino.UseVisualStyleBackColor = false;
-            // 
-            // rbMasculino
-            // 
-            rbMasculino.AutoSize = true;
-            rbMasculino.BackColor = Color.Transparent;
-            rbMasculino.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            rbMasculino.ForeColor = Color.DeepPink;
-            rbMasculino.Location = new Point(248, 374);
-            rbMasculino.Name = "rbMasculino";
-            rbMasculino.Size = new Size(116, 29);
-            rbMasculino.TabIndex = 29;
-            rbMasculino.TabStop = true;
-            rbMasculino.Text = "masculino";
-            rbMasculino.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             button2.BackColor = Color.DeepPink;
@@ -183,17 +140,36 @@
             pictureBox2.TabIndex = 38;
             pictureBox2.TabStop = false;
             // 
-            // Form3
+            // txtEstado
+            // 
+            txtEstado.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEstado.ForeColor = SystemColors.ScrollBar;
+            txtEstado.Location = new Point(264, 311);
+            txtEstado.Name = "txtEstado";
+            txtEstado.PlaceholderText = "estado(Sigla)";
+            txtEstado.Size = new Size(217, 33);
+            txtEstado.TabIndex = 39;
+            // 
+            // txtCidade
+            // 
+            txtCidade.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = SystemColors.ScrollBar;
+            txtCidade.Location = new Point(264, 350);
+            txtCidade.Name = "txtCidade";
+            txtCidade.PlaceholderText = "cidade";
+            txtCidade.Size = new Size(217, 33);
+            txtCidade.TabIndex = 40;
+            // 
+            // TelaCadastrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(725, 516);
+            Controls.Add(txtCidade);
+            Controls.Add(txtEstado);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
-            Controls.Add(rbMasculino);
-            Controls.Add(rbFeminino);
-            Controls.Add(rbOutro);
             Controls.Add(txtEmail);
             Controls.Add(txtDataNascimento);
             Controls.Add(txtCpfCadastro);
@@ -201,7 +177,7 @@
             Controls.Add(txtNome);
             Controls.Add(lblLogin);
             Controls.Add(pictureBox1);
-            Name = "Form3";
+            Name = "TelaCadastrar";
             Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -218,10 +194,9 @@
         private TextBox txtCpfCadastro;
         private TextBox txtDataNascimento;
         private TextBox txtEmail;
-        private RadioButton rbOutro;
-        private RadioButton rbFeminino;
-        private RadioButton rbMasculino;
         private Button button2;
         internal protected PictureBox pictureBox2;
+        private TextBox txtEstado;
+        private TextBox txtCidade;
     }
 }

@@ -102,3 +102,5 @@ C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.TelaMenu.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.TelaTransferencia.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.CopyComplete
+C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\DTO.pdb

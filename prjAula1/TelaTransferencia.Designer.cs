@@ -139,7 +139,6 @@
             txtUsuario.PlaceholderText = "valor";
             txtUsuario.Size = new Size(195, 33);
             txtUsuario.TabIndex = 35;
-            //txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // button2
             // 
@@ -150,7 +149,7 @@
             button2.Name = "button2";
             button2.Size = new Size(195, 42);
             button2.TabIndex = 36;
-            button2.Text = "Conirmar";
+            button2.Text = "Confirmar";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
@@ -173,10 +172,10 @@
             radioButton2.ForeColor = Color.DeepPink;
             radioButton2.Location = new Point(264, 38);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(134, 29);
+            radioButton2.Size = new Size(135, 29);
             radioButton2.TabIndex = 38;
             radioButton2.TabStop = true;
-            radioButton2.Text = "tranferencia";
+            radioButton2.Text = "Tranferência";
             radioButton2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -192,7 +191,7 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // Form5
+            // TelaTransferencia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -210,7 +209,7 @@
             Controls.Add(label1);
             Controls.Add(radioButton1);
             Controls.Add(radioButton3);
-            Name = "Form5";
+            Name = "TelaTransferencia";
             Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

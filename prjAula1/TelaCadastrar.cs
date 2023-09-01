@@ -63,11 +63,11 @@ namespace prjAula1
 
             }
 
-            
+
         }
         class Cliente : TelaCadastrar
         {
-            
+
 
             public Cliente()
             {
@@ -76,9 +76,9 @@ namespace prjAula1
         }
 
     }
-    
+
 }
 
 
-         
+
 
