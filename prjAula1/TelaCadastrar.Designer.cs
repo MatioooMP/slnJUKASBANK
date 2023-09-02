@@ -34,12 +34,13 @@
             txtNome = new TextBox();
             txtSenhaCadastro = new TextBox();
             txtCpfCadastro = new TextBox();
-            txtDataNascimento = new TextBox();
             txtEmail = new TextBox();
             button2 = new Button();
             pictureBox2 = new PictureBox();
-            txtEstado = new TextBox();
             txtCidade = new TextBox();
+            txtRepetirSenha = new TextBox();
+            dtpDataNascimento = new DateTimePicker();
+            cmbEstados = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -48,9 +49,9 @@
             // 
             pictureBox1.BackColor = Color.Pink;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(191, 89);
+            pictureBox1.Location = new Point(195, 96);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(352, 310);
+            pictureBox1.Size = new Size(352, 342);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
@@ -82,7 +83,7 @@
             txtSenhaCadastro.ForeColor = SystemColors.ScrollBar;
             txtSenhaCadastro.Location = new Point(264, 194);
             txtSenhaCadastro.Name = "txtSenhaCadastro";
-            txtSenhaCadastro.PlaceholderText = "senha(6 digitos)";
+            txtSenhaCadastro.PlaceholderText = "Senha(6 digitos)";
             txtSenhaCadastro.Size = new Size(217, 33);
             txtSenhaCadastro.TabIndex = 19;
             // 
@@ -96,21 +97,11 @@
             txtCpfCadastro.Size = new Size(217, 33);
             txtCpfCadastro.TabIndex = 22;
             // 
-            // txtDataNascimento
-            // 
-            txtDataNascimento.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDataNascimento.ForeColor = SystemColors.ScrollBar;
-            txtDataNascimento.Location = new Point(264, 233);
-            txtDataNascimento.Name = "txtDataNascimento";
-            txtDataNascimento.PlaceholderText = "data de nascimento";
-            txtDataNascimento.Size = new Size(217, 33);
-            txtDataNascimento.TabIndex = 23;
-            // 
             // txtEmail
             // 
             txtEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.ForeColor = SystemColors.ScrollBar;
-            txtEmail.Location = new Point(264, 272);
+            txtEmail.Location = new Point(264, 311);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "email";
             txtEmail.Size = new Size(217, 33);
@@ -121,9 +112,9 @@
             button2.BackColor = Color.DeepPink;
             button2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(289, 420);
+            button2.Location = new Point(298, 444);
             button2.Name = "button2";
-            button2.Size = new Size(165, 36);
+            button2.Size = new Size(156, 36);
             button2.TabIndex = 30;
             button2.Text = "Criar Conta";
             button2.UseVisualStyleBackColor = false;
@@ -140,25 +131,43 @@
             pictureBox2.TabIndex = 38;
             pictureBox2.TabStop = false;
             // 
-            // txtEstado
-            // 
-            txtEstado.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEstado.ForeColor = SystemColors.ScrollBar;
-            txtEstado.Location = new Point(264, 311);
-            txtEstado.Name = "txtEstado";
-            txtEstado.PlaceholderText = "estado(Sigla)";
-            txtEstado.Size = new Size(217, 33);
-            txtEstado.TabIndex = 39;
-            // 
             // txtCidade
             // 
             txtCidade.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtCidade.ForeColor = SystemColors.ScrollBar;
-            txtCidade.Location = new Point(264, 350);
+            txtCidade.Location = new Point(264, 389);
             txtCidade.Name = "txtCidade";
             txtCidade.PlaceholderText = "cidade";
             txtCidade.Size = new Size(217, 33);
             txtCidade.TabIndex = 40;
+            // 
+            // txtRepetirSenha
+            // 
+            txtRepetirSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtRepetirSenha.ForeColor = SystemColors.ScrollBar;
+            txtRepetirSenha.Location = new Point(264, 233);
+            txtRepetirSenha.Name = "txtRepetirSenha";
+            txtRepetirSenha.PlaceholderText = "Repetir senha(6 digitos)";
+            txtRepetirSenha.Size = new Size(217, 33);
+            txtRepetirSenha.TabIndex = 41;
+            // 
+            // dtpDataNascimento
+            // 
+            dtpDataNascimento.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dtpDataNascimento.Location = new Point(264, 272);
+            dtpDataNascimento.Name = "dtpDataNascimento";
+            dtpDataNascimento.Size = new Size(217, 33);
+            dtpDataNascimento.TabIndex = 42;
+            // 
+            // cmbEstados
+            // 
+            cmbEstados.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbEstados.FormattingEnabled = true;
+            cmbEstados.Location = new Point(264, 350);
+            cmbEstados.Name = "cmbEstados";
+            cmbEstados.Size = new Size(217, 33);
+            cmbEstados.TabIndex = 43;
+            cmbEstados.Text = "UF";
             // 
             // TelaCadastrar
             // 
@@ -166,12 +175,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(725, 516);
+            Controls.Add(cmbEstados);
+            Controls.Add(dtpDataNascimento);
+            Controls.Add(txtRepetirSenha);
             Controls.Add(txtCidade);
-            Controls.Add(txtEstado);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
             Controls.Add(txtEmail);
-            Controls.Add(txtDataNascimento);
             Controls.Add(txtCpfCadastro);
             Controls.Add(txtSenhaCadastro);
             Controls.Add(txtNome);
@@ -192,11 +202,12 @@
         private TextBox txtNome;
         private TextBox txtSenhaCadastro;
         private TextBox txtCpfCadastro;
-        private TextBox txtDataNascimento;
         private TextBox txtEmail;
         private Button button2;
         internal protected PictureBox pictureBox2;
-        private TextBox txtEstado;
         private TextBox txtCidade;
+        private TextBox txtRepetirSenha;
+        private DateTimePicker dtpDataNascimento;
+        private ComboBox cmbEstados;
     }
 }

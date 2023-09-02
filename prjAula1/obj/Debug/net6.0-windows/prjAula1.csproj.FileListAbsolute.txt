@@ -74,7 +74,6 @@ C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\prjAula1.dll
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\prjAula1.pdb
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.AssemblyReference.cache
-C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.Extra.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.jucas.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.Properties.Resources.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.GenerateResource.cache
@@ -87,7 +86,6 @@ C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.pdb
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.genruntimeconfig.cache
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\ref\prjAula1.dll
-C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.FormCollection.resources
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\prjAula1.dll.config
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
@@ -104,3 +102,4 @@ C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.CopyComplete
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\DTO.dll
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.TelaAlterarDados.resources

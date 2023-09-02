@@ -31,48 +31,49 @@
             menuStrip1 = new MenuStrip();
             loginToolStripMenuItem = new ToolStripMenuItem();
             cadastroToolStripMenuItem = new ToolStripMenuItem();
-            menuToolStripMenuItem = new ToolStripMenuItem();
             saqueToolStripMenuItem = new ToolStripMenuItem();
+            alterarDadosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Dock = DockStyle.Left;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastroToolStripMenuItem, menuToolStripMenuItem, saqueToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastroToolStripMenuItem, saqueToolStripMenuItem, alterarDadosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(131, 450);
+            menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
+            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
             // loginToolStripMenuItem
             // 
             loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(118, 19);
+            loginToolStripMenuItem.Size = new Size(49, 20);
             loginToolStripMenuItem.Text = "Login";
             loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
             // 
             // cadastroToolStripMenuItem
             // 
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(118, 19);
+            cadastroToolStripMenuItem.Size = new Size(66, 20);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
-            // 
-            // menuToolStripMenuItem
-            // 
-            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(118, 19);
-            menuToolStripMenuItem.Text = "Menu";
-            menuToolStripMenuItem.Click += menuToolStripMenuItem_Click;
             // 
             // saqueToolStripMenuItem
             // 
             saqueToolStripMenuItem.Name = "saqueToolStripMenuItem";
-            saqueToolStripMenuItem.Size = new Size(118, 19);
+            saqueToolStripMenuItem.Size = new Size(125, 20);
             saqueToolStripMenuItem.Text = "Saque/Transferência";
+            saqueToolStripMenuItem.Visible = false;
             saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click;
+            // 
+            // alterarDadosToolStripMenuItem
+            // 
+            alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
+            alterarDadosToolStripMenuItem.Size = new Size(90, 20);
+            alterarDadosToolStripMenuItem.Text = "Alterar Dados";
+            alterarDadosToolStripMenuItem.Click += alterarDadosToolStripMenuItem_Click;
             // 
             // TelaInicial
             // 
@@ -96,7 +97,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem loginToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem;
-        private ToolStripMenuItem menuToolStripMenuItem;
         private ToolStripMenuItem saqueToolStripMenuItem;
+        private ToolStripMenuItem alterarDadosToolStripMenuItem;
     }
 }

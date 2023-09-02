@@ -57,9 +57,9 @@ namespace prjAula1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var menu = new TelaCadastrar();
-            this.Hide();
-            menu.Show();
+            //var menu = new TelaCadastrar();
+            //this.Hide();
+            //menu.Show();
         }
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -161,21 +161,16 @@ namespace prjAula1
                         }
                     }
                     leitor.Close(); //fecha leitor
-                    
+
                     conexao.Close(); //fecha conexao com BD
 
                     Form telaPrincipal = Application.OpenForms["TelaInicial"];
                     //acessando o formulário aberto através da variável janelaPrincipal
                     MenuStrip menuPrincipal = (MenuStrip)telaPrincipal.Controls[0];
                     menuPrincipal.Items[0].Text = "Logout";
-                    menuPrincipal.Items[1].Visible = true;
+                    menuPrincipal.Items[1].Visible = false;
                     menuPrincipal.Items[2].Visible = true;
-                    menuPrincipal.Items[3].Visible = true;
-                    menuPrincipal.Items[4].Visible = true;
-                    menuPrincipal.Items[4].Text = UsuarioLogado.NomeCliente;
-                    menuPrincipal.Items[5].Visible = true;
-                    menuPrincipal.Items[6].Visible = true;
-                    menuPrincipal.Items[6].Text = UsuarioLogado.Contas[0].IdConta.ToString();
+                  
 
                     MessageBox.Show($"Olá,{UsuarioLogado.NomeCliente}!\n" +
                         $"Você foi logado na conta {UsuarioLogado.Contas[0].IdCliente.ToString()}\n" +
@@ -185,12 +180,14 @@ namespace prjAula1
                     //    $"{CorrentistaLogado.Estado},{CorrentistaLogado.Cpf},{CorrentistaLogado.Senha},{CorrentistaLogado.Celular}");
                     this.Close();
                 }
-                
+
                 else
                 {
                     MessageBox.Show("Usuario ou senha invalidos");
                 }
             }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
