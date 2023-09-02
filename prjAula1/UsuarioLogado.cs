@@ -32,4 +32,7 @@ namespace prjAula1
         UsuarioLogado.Senha = String.Empty;
         UsuarioLogado.Contas.Clear();
     }*/
+
+
+ 
 }

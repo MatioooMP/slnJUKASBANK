@@ -82,7 +82,7 @@ namespace prjAula1
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnacessar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -170,7 +170,7 @@ namespace prjAula1
                     menuPrincipal.Items[0].Text = "Logout";
                     menuPrincipal.Items[1].Visible = false;
                     menuPrincipal.Items[2].Visible = true;
-                  
+
 
                     MessageBox.Show($"Olá,{UsuarioLogado.NomeCliente}!\n" +
                         $"Você foi logado na conta {UsuarioLogado.Contas[0].IdCliente.ToString()}\n" +
@@ -192,8 +192,6 @@ namespace prjAula1
             {
                 MessageBox.Show(ex.Message);
             }
-
-
         }
     }
 }

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="T:\Publica\TURMA_TI48N\A.Graciolli\forms Jucas Bank\jucas.cs" Link="jucas.cs" />
+    <EmbeddedResource Remove="jucas.resx" />
   </ItemGroup>
 
   <ItemGroup>

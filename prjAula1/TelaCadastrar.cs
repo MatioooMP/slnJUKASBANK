@@ -65,7 +65,7 @@ namespace prjAula1
                     conexao.Open();
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
-                    MessageBox.Show("Cliente cadastrado com sucesso!!!", "Info",
+                    MessageBox.Show("Cliente Cadastrado com sucesso!!!", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     UtilUI.LimpaForm(this);
@@ -123,7 +123,10 @@ namespace prjAula1
 
         }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
     class Cliente : TelaCadastrar
     {

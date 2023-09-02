@@ -29,165 +29,159 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
-            txtSenha = new TextBox();
-            txtcpf = new TextBox();
-            aqui = new Label();
-            lblLogin = new Label();
-            btnEsqueceuSenha = new Button();
-            btnCadastrar = new Button();
-            lblMensagem = new Label();
-            label2 = new Label();
-            btnacessar = new Button();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            SuspendLayout();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtcpf = new System.Windows.Forms.TextBox();
+            this.aqui = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.btnEsqueceuSenha = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.lblMensagem = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnacessar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SuspendLayout();
             // 
             // txtSenha
             // 
-            txtSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSenha.Location = new Point(285, 217);
-            txtSenha.MaxLength = 6;
-            txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "senha";
-            txtSenha.Size = new Size(133, 33);
-            txtSenha.TabIndex = 0;
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSenha.Location = new System.Drawing.Point(285, 217);
+            this.txtSenha.MaxLength = 6;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PlaceholderText = "senha";
+            this.txtSenha.Size = new System.Drawing.Size(133, 33);
+            this.txtSenha.TabIndex = 0;
             // 
             // txtcpf
             // 
-            txtcpf.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtcpf.ForeColor = SystemColors.ScrollBar;
-            txtcpf.Location = new Point(285, 173);
-            txtcpf.MaxLength = 11;
-            txtcpf.Name = "txtcpf";
-            txtcpf.PlaceholderText = "usuario";
-            txtcpf.Size = new Size(133, 33);
-            txtcpf.TabIndex = 1;
-            txtcpf.TextChanged += textBox2_TextChanged;
+            this.txtcpf.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcpf.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtcpf.Location = new System.Drawing.Point(285, 173);
+            this.txtcpf.MaxLength = 11;
+            this.txtcpf.Name = "txtcpf";
+            this.txtcpf.PlaceholderText = "usuario";
+            this.txtcpf.Size = new System.Drawing.Size(133, 33);
+            this.txtcpf.TabIndex = 1;
             // 
             // aqui
             // 
-            aqui.AutoSize = true;
-            aqui.Location = new Point(347, 199);
-            aqui.Name = "aqui";
-            aqui.Size = new Size(0, 15);
-            aqui.TabIndex = 3;
+            this.aqui.AutoSize = true;
+            this.aqui.Location = new System.Drawing.Point(347, 199);
+            this.aqui.Name = "aqui";
+            this.aqui.Size = new System.Drawing.Size(0, 15);
+            this.aqui.TabIndex = 3;
             // 
             // lblLogin
             // 
-            lblLogin.AutoSize = true;
-            lblLogin.BackColor = Color.Transparent;
-            lblLogin.Font = new Font("Agency FB", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.HotPink;
-            lblLogin.Location = new Point(317, 128);
-            lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(76, 42);
-            lblLogin.TabIndex = 4;
-            lblLogin.Text = "LOGIN";
-            lblLogin.Click += label1_Click;
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Agency FB", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.ForeColor = System.Drawing.Color.HotPink;
+            this.lblLogin.Location = new System.Drawing.Point(317, 128);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(76, 42);
+            this.lblLogin.TabIndex = 4;
+            this.lblLogin.Text = "LOGIN";
             // 
             // btnEsqueceuSenha
             // 
-            btnEsqueceuSenha.BackColor = Color.DeepPink;
-            btnEsqueceuSenha.BackgroundImageLayout = ImageLayout.None;
-            btnEsqueceuSenha.Cursor = Cursors.Hand;
-            btnEsqueceuSenha.FlatStyle = FlatStyle.Flat;
-            btnEsqueceuSenha.ForeColor = SystemColors.ButtonFace;
-            btnEsqueceuSenha.Location = new Point(266, 340);
-            btnEsqueceuSenha.Name = "btnEsqueceuSenha";
-            btnEsqueceuSenha.Size = new Size(178, 23);
-            btnEsqueceuSenha.TabIndex = 6;
-            btnEsqueceuSenha.Text = "Esqueceu a senha?";
-            btnEsqueceuSenha.UseVisualStyleBackColor = false;
-            btnEsqueceuSenha.Click += button2_Click;
+            this.btnEsqueceuSenha.BackColor = System.Drawing.Color.DeepPink;
+            this.btnEsqueceuSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEsqueceuSenha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEsqueceuSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEsqueceuSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEsqueceuSenha.Location = new System.Drawing.Point(266, 340);
+            this.btnEsqueceuSenha.Name = "btnEsqueceuSenha";
+            this.btnEsqueceuSenha.Size = new System.Drawing.Size(178, 23);
+            this.btnEsqueceuSenha.TabIndex = 6;
+            this.btnEsqueceuSenha.Text = "Esqueceu a senha?";
+            this.btnEsqueceuSenha.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
-            btnCadastrar.BackColor = Color.DeepPink;
-            btnCadastrar.BackgroundImageLayout = ImageLayout.None;
-            btnCadastrar.Cursor = Cursors.Hand;
-            btnCadastrar.FlatStyle = FlatStyle.Flat;
-            btnCadastrar.ForeColor = SystemColors.ButtonFace;
-            btnCadastrar.Location = new Point(266, 369);
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(178, 23);
-            btnCadastrar.TabIndex = 8;
-            btnCadastrar.Text = "Cadastrar-se";
-            btnCadastrar.UseVisualStyleBackColor = false;
-            btnCadastrar.Click += button3_Click;
+            this.btnCadastrar.BackColor = System.Drawing.Color.DeepPink;
+            this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCadastrar.Location = new System.Drawing.Point(266, 369);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(178, 23);
+            this.btnCadastrar.TabIndex = 8;
+            this.btnCadastrar.Text = "Cadastrar-se";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
             // lblMensagem
             // 
-            lblMensagem.AutoSize = true;
-            lblMensagem.ForeColor = SystemColors.ControlLightLight;
-            lblMensagem.Location = new Point(314, 419);
-            lblMensagem.Name = "lblMensagem";
-            lblMensagem.Size = new Size(0, 15);
-            lblMensagem.TabIndex = 9;
-            lblMensagem.Click += label1_Click_1;
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMensagem.Location = new System.Drawing.Point(314, 419);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 15);
+            this.lblMensagem.TabIndex = 9;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.HotPink;
-            label2.Location = new Point(319, 523);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 15);
-            label2.TabIndex = 10;
-            label2.Text = "JUCA'S BANK";
-            label2.Click += label2_Click_2;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.HotPink;
+            this.label2.Location = new System.Drawing.Point(319, 523);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "JUCA\'S BANK";
             // 
             // btnacessar
             // 
-            btnacessar.BackColor = Color.DeepPink;
-            btnacessar.BackgroundImageLayout = ImageLayout.None;
-            btnacessar.Cursor = Cursors.Hand;
-            btnacessar.FlatStyle = FlatStyle.Flat;
-            btnacessar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnacessar.ForeColor = SystemColors.ButtonFace;
-            btnacessar.Location = new Point(306, 275);
-            btnacessar.Name = "btnacessar";
-            btnacessar.Size = new Size(100, 39);
-            btnacessar.TabIndex = 11;
-            btnacessar.Text = "Acessar";
-            btnacessar.UseVisualStyleBackColor = false;
-            btnacessar.Click += button1_Click_1;
+            this.btnacessar.BackColor = System.Drawing.Color.DeepPink;
+            this.btnacessar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnacessar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnacessar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnacessar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnacessar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnacessar.Location = new System.Drawing.Point(306, 275);
+            this.btnacessar.Name = "btnacessar";
+            this.btnacessar.Size = new System.Drawing.Size(100, 39);
+            this.btnacessar.TabIndex = 11;
+            this.btnacessar.Text = "Acessar";
+            this.btnacessar.UseVisualStyleBackColor = false;
+            this.btnacessar.Click += new System.EventHandler(this.btnacessar_Click);
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(209, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(293, 113);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 38;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(209, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(293, 113);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // TelaLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightPink;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(714, 559);
-            Controls.Add(pictureBox2);
-            Controls.Add(btnacessar);
-            Controls.Add(label2);
-            Controls.Add(lblMensagem);
-            Controls.Add(btnCadastrar);
-            Controls.Add(btnEsqueceuSenha);
-            Controls.Add(lblLogin);
-            Controls.Add(aqui);
-            Controls.Add(txtcpf);
-            Controls.Add(txtSenha);
-            Cursor = Cursors.Hand;
-            Name = "Form1";
-            Text = "Tela Login";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightPink;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(714, 559);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnacessar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblMensagem);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.btnEsqueceuSenha);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.aqui);
+            this.Controls.Add(this.txtcpf);
+            this.Controls.Add(this.txtSenha);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Name = "TelaLogin";
+            this.Text = "Tela Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

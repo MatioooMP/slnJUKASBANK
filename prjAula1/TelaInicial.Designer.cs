@@ -28,68 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            loginToolStripMenuItem = new ToolStripMenuItem();
-            cadastroToolStripMenuItem = new ToolStripMenuItem();
-            saqueToolStripMenuItem = new ToolStripMenuItem();
-            alterarDadosToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastroToolStripMenuItem, saqueToolStripMenuItem, alterarDadosToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            menuStrip1.ItemClicked += menuStrip1_ItemClicked;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loginToolStripMenuItem,
+            this.cadastroToolStripMenuItem,
+            this.saqueToolStripMenuItem,
+            this.alterarDadosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
             // 
             // loginToolStripMenuItem
             // 
-            loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(49, 20);
-            loginToolStripMenuItem.Text = "Login";
-            loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click_1);
             // 
             // cadastroToolStripMenuItem
             // 
-            cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(66, 20);
-            cadastroToolStripMenuItem.Text = "Cadastro";
-            cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click_1);
             // 
             // saqueToolStripMenuItem
             // 
-            saqueToolStripMenuItem.Name = "saqueToolStripMenuItem";
-            saqueToolStripMenuItem.Size = new Size(125, 20);
-            saqueToolStripMenuItem.Text = "Saque/Transferência";
-            saqueToolStripMenuItem.Visible = false;
-            saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click;
+            this.saqueToolStripMenuItem.Name = "saqueToolStripMenuItem";
+            this.saqueToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.saqueToolStripMenuItem.Text = "Saque/Transferência";
+            this.saqueToolStripMenuItem.Visible = false;
             // 
             // alterarDadosToolStripMenuItem
             // 
-            alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
-            alterarDadosToolStripMenuItem.Size = new Size(90, 20);
-            alterarDadosToolStripMenuItem.Text = "Alterar Dados";
-            alterarDadosToolStripMenuItem.Click += alterarDadosToolStripMenuItem_Click;
+            this.alterarDadosToolStripMenuItem.Name = "alterarDadosToolStripMenuItem";
+            this.alterarDadosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.alterarDadosToolStripMenuItem.Text = "Alterar Dados";
+            this.alterarDadosToolStripMenuItem.Click += new System.EventHandler(this.alterarDadosToolStripMenuItem_Click_1);
             // 
             // TelaInicial
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            IsMdiContainer = true;
-            MainMenuStrip = menuStrip1;
-            Name = "TelaInicial";
-            Text = "Form6";
-            Load += Form6_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "TelaInicial";
+            this.Text = "Form6";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
