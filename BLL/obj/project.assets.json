@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Matheus\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\matheus.mpereira17\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\source\\repos\\slnJUKASBANK\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUKASBANK\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Matheus\\source\\repos\\slnJUKASBANK\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\source\\repos\\slnJUKASBANK\\BLL\\obj\\",
+      "projectPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUKASBANK\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\matheus.mpereira17\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matheus.mpereira17\\source\\repos\\slnJUKASBANK\\BLL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\matheus.mpereira17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

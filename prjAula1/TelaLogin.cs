@@ -193,5 +193,10 @@ namespace prjAula1
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

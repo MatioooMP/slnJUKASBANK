@@ -108,5 +108,10 @@ namespace prjAula1
             JanelaAlterarDados.MdiParent = this;
             JanelaAlterarDados.Show();
         }
+
+        private void criarContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

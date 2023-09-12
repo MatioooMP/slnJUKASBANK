@@ -97,7 +97,6 @@ namespace prjAula1
                     //Criando uma conexão
                     SqlConnection conexao =
                            new SqlConnection(ConfigurationManager.ConnectionStrings["prjAula1.Properties.Settings.strConexao"].ToString());
-                    SqlDataReader leitor;
                     //Criando um comando
                     SqlCommand cmd = new SqlCommand();
 
@@ -107,36 +106,17 @@ namespace prjAula1
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
-                    conexao.Open(); //abrindo conexão
-
-                    leitor = cmd.ExecuteReader();  //igualando o leitor ao resultado de BD
-
-                    if (leitor.HasRows) //se o leitor encontrar linhas de dados
-                    {
-                        leitor.Read();
-                        //leitor.GetInt32(0);    
-                        UsuarioLogado.IdCliente = leitor.GetInt32(0);
-                        UsuarioLogado.NomeCliente = leitor.GetString(1);
-                        UsuarioLogado.DataNascimento = leitor.GetDateTime(5);
-                        UsuarioLogado.Cidade = leitor.GetString(6);
-                        UsuarioLogado.Estado = leitor.GetString(7);
-                        UsuarioLogado.Cpf = leitor.GetString(2);
-                        UsuarioLogado.Senha = leitor.GetString(4);
-                        UsuarioLogado.Email = leitor.GetString(3);
-
-                        //fechando leitor
-                        leitor.Close();
-                    }
+                 
+                  
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("idCliente",UsuarioLogado.IdCliente);
+                    cmd.Parameters.AddWithValue("idCliente", UsuarioLogado.IdCliente);
                     cmd.Parameters.AddWithValue("nomeCliente", txtAlterarNome.Text);
                     cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(dtpAlterarDataNascimento.Text));
                     cmd.Parameters.AddWithValue("cidade", txtAlterarCidade.Text);
                     cmd.Parameters.AddWithValue("estado", cmbAlterarEstados.Text);
                     cmd.Parameters.AddWithValue("cpf", txtAlterarCPF.Text);
                     cmd.Parameters.AddWithValue("email", txtAlterarEmail.Text);
-                    cmd.Parameters.AddWithValue("senha", txtConfirmarSenha.Text);
 
 
 
@@ -148,9 +128,9 @@ namespace prjAula1
                     MessageBox.Show("Cliente Alterado com sucesso!!!", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    UtilUI.LimpaForm(this);
+                    UtilUI.LimpaForm(this); 
                 }
-
+                    
                 else
                 {
                     throw new Exception("Senha incorreta!");
@@ -164,6 +144,11 @@ namespace prjAula1
                 MessageBox.Show(ex.Message,
                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void cmbAlterarEstados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
