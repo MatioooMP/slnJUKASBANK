@@ -113,5 +113,12 @@ namespace prjAula1
         {
 
         }
+
+        private void saqueToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form1 TelaDeposito = new Form1();
+            TelaDeposito.MdiParent = this;
+            TelaDeposito.Show();
+        }
     }
 }

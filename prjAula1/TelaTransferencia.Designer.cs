@@ -210,7 +210,7 @@
             Controls.Add(radioButton1);
             Controls.Add(radioButton3);
             Name = "TelaTransferencia";
-            Text = "Form5";
+            Text = " ";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

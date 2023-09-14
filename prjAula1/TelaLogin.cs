@@ -86,6 +86,7 @@ namespace prjAula1
         {
             try
             {
+                UsuarioLogado.ContaLogada = 0;
                 //Criando uma conexão
                 SqlConnection conexao =
                 new SqlConnection(ConfigurationManager.ConnectionStrings["prjAula1.Properties.Settings.strConexao"].ToString());
@@ -159,6 +160,7 @@ namespace prjAula1
                             //adiciona a conta recém criada na memória para a colection de contas
                             UsuarioLogado.Contas.Add(conta);
                         }
+                        UsuarioLogado.ContaLogada = UsuarioLogado.Contas[0].IdConta;
                     }
                     leitor.Close(); //fecha leitor
 

@@ -67,6 +67,7 @@
             saqueToolStripMenuItem.Size = new Size(125, 20);
             saqueToolStripMenuItem.Text = "Saque/Transferência";
             saqueToolStripMenuItem.Visible = false;
+            saqueToolStripMenuItem.Click += saqueToolStripMenuItem_Click_1;
             // 
             // alterarDadosToolStripMenuItem
             // 

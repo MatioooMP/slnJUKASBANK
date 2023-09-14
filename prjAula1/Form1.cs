@@ -1,4 +1,5 @@
-﻿using prjAula1.Classes;
+﻿using DTO;
+using prjAula1.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,36 +14,54 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class TelaConta : Form
+    public partial class Form1 : Form
     {
-        public TelaConta()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void btnCriarConta_Click(object sender, EventArgs e)
+        private void btnDepositar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtSenhaConta.Text == txtConfirmarSenha.Text)
+                Conta conta = new Conta(); foreach (var item in UsuarioLogado.Contas)
+                {
+                    if (item.IdConta == UsuarioLogado.ContaLogada)
+                    {
+                        conta = item;
+                    }
+                }
+
+                if (Convert.ToDecimal(txtSaldoDepositar.Text) > 0 && txtSenhaConfirmar.Text == conta.SenhaConta )
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
                            new SqlConnection(ConfigurationManager.ConnectionStrings["prjAula1.Properties.Settings.strConexao"].ToString());
-
                     //Criando um comando
                     SqlCommand cmd = new SqlCommand();
 
+
                     //criando texto do comando, tipo e conexão que será usada
-                    cmd.CommandText = "pi_Conta";
+                    cmd.CommandText = "pu_AtualizarConta";
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
+                    
+                    MessageBox.Show(conta.DataAbertura.ToString());
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("saldo", txtSaldoConta.Text);
-                    cmd.Parameters.AddWithValue("senhaConta", txtSenhaConta.Text);
+                    cmd.Parameters.AddWithValue("idConta", UsuarioLogado.ContaLogada);//15
+                    cmd.Parameters.AddWithValue("dataCriacaoConta", conta.DataAbertura);
+                    cmd.Parameters.AddWithValue("saldo",  Convert.ToDecimal(txtSaldoDepositar.Text) + conta.Saldo);
+                    cmd.Parameters.AddWithValue("tipoConta", conta.TipoConta);
+                    cmd.Parameters.AddWithValue("statusConta", conta.Status);
+                    cmd.Parameters.AddWithValue("senhaConta", conta.SenhaConta);
 
+       
+                    //5
+                    //12
+                    //15
 
 
 
@@ -50,22 +69,19 @@ namespace prjAula1
                     conexao.Open();
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
-                    MessageBox.Show("Conta Cadastrada com sucesso!!!", "Info",
+                    MessageBox.Show("Depósito feito com sucesso!!!", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     UtilUI.LimpaForm(this);
-
-
-
-
-
-
-
                 }
+
                 else
                 {
-                    throw new Exception("Os campos de senha não coincidem!!!");
+                    throw new Exception("Senha incorreta!");
                 }
+
+
+
             }
             catch (Exception ex)
             {
