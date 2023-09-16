@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class Form1 : Form
+    public partial class TelaDeposito : Form
     {
-        public Form1()
+        public TelaDeposito()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace prjAula1
                     }
                 }
 
-                if (Convert.ToDecimal(txtSaldoDepositar.Text) > 0 && txtSenhaConfirmar.Text == conta.SenhaConta )
+                if (Convert.ToDecimal(txtSaldoDepositar.Text) > 0 && txtSenhaConfirmar.Text == conta.SenhaConta)
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
@@ -47,18 +47,17 @@ namespace prjAula1
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
-                    
-                    MessageBox.Show(conta.DataAbertura.ToString());
+
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("idConta", UsuarioLogado.ContaLogada);//15
                     cmd.Parameters.AddWithValue("dataCriacaoConta", conta.DataAbertura);
-                    cmd.Parameters.AddWithValue("saldo",  Convert.ToDecimal(txtSaldoDepositar.Text) + conta.Saldo);
+                    cmd.Parameters.AddWithValue("saldo", Convert.ToDecimal(txtSaldoDepositar.Text) + conta.Saldo);
                     cmd.Parameters.AddWithValue("tipoConta", conta.TipoConta);
                     cmd.Parameters.AddWithValue("statusConta", conta.Status);
                     cmd.Parameters.AddWithValue("senhaConta", conta.SenhaConta);
 
-       
+
                     //5
                     //12
                     //15
@@ -67,6 +66,8 @@ namespace prjAula1
 
                     //abrir a conexão
                     conexao.Open();
+
+                 
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
                     MessageBox.Show("Depósito feito com sucesso!!!", "Info",

@@ -37,12 +37,14 @@
             lblConfirmarSenha = new Label();
             btnCriarConta = new Button();
             lblCadastrarConta = new Label();
+            cmbTipoConta = new ComboBox();
+            lblTipoConta = new Label();
             SuspendLayout();
             // 
             // txtSaldoConta
             // 
             txtSaldoConta.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSaldoConta.Location = new Point(214, 111);
+            txtSaldoConta.Location = new Point(214, 101);
             txtSaldoConta.Name = "txtSaldoConta";
             txtSaldoConta.PlaceholderText = "Saldo";
             txtSaldoConta.Size = new Size(159, 32);
@@ -51,7 +53,7 @@
             // txtSenhaConta
             // 
             txtSenhaConta.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSenhaConta.Location = new Point(214, 163);
+            txtSenhaConta.Location = new Point(214, 215);
             txtSenhaConta.Name = "txtSenhaConta";
             txtSenhaConta.PlaceholderText = "Senha(6 Digítos)";
             txtSenhaConta.Size = new Size(159, 32);
@@ -60,7 +62,7 @@
             // txtConfirmarSenha
             // 
             txtConfirmarSenha.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            txtConfirmarSenha.Location = new Point(214, 220);
+            txtConfirmarSenha.Location = new Point(214, 271);
             txtConfirmarSenha.Name = "txtConfirmarSenha";
             txtConfirmarSenha.PlaceholderText = "Confirmar Senha";
             txtConfirmarSenha.Size = new Size(159, 32);
@@ -84,7 +86,7 @@
             lblSenha.BackColor = Color.Transparent;
             lblSenha.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.HotPink;
-            lblSenha.Location = new Point(131, 170);
+            lblSenha.Location = new Point(131, 222);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(68, 25);
             lblSenha.TabIndex = 4;
@@ -96,7 +98,7 @@
             lblConfirmarSenha.BackColor = Color.Transparent;
             lblConfirmarSenha.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             lblConfirmarSenha.ForeColor = Color.HotPink;
-            lblConfirmarSenha.Location = new Point(41, 227);
+            lblConfirmarSenha.Location = new Point(41, 278);
             lblConfirmarSenha.Name = "lblConfirmarSenha";
             lblConfirmarSenha.Size = new Size(158, 25);
             lblConfirmarSenha.TabIndex = 5;
@@ -104,7 +106,7 @@
             // 
             // btnCriarConta
             // 
-            btnCriarConta.Location = new Point(214, 283);
+            btnCriarConta.Location = new Point(214, 328);
             btnCriarConta.Name = "btnCriarConta";
             btnCriarConta.Size = new Size(159, 37);
             btnCriarConta.TabIndex = 6;
@@ -124,12 +126,37 @@
             lblCadastrarConta.TabIndex = 17;
             lblCadastrarConta.Text = "CRIAR CONTA";
             // 
+            // cmbTipoConta
+            // 
+            cmbTipoConta.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbTipoConta.FormattingEnabled = true;
+            cmbTipoConta.Items.AddRange(new object[] { "Corrente", "Poupança" });
+            cmbTipoConta.Location = new Point(214, 157);
+            cmbTipoConta.Name = "cmbTipoConta";
+            cmbTipoConta.Size = new Size(159, 33);
+            cmbTipoConta.TabIndex = 18;
+            cmbTipoConta.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // lblTipoConta
+            // 
+            lblTipoConta.AutoSize = true;
+            lblTipoConta.BackColor = Color.Transparent;
+            lblTipoConta.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTipoConta.ForeColor = Color.HotPink;
+            lblTipoConta.Location = new Point(91, 165);
+            lblTipoConta.Name = "lblTipoConta";
+            lblTipoConta.Size = new Size(108, 25);
+            lblTipoConta.TabIndex = 19;
+            lblTipoConta.Text = "Tipo Conta:";
+            // 
             // TelaConta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(394, 332);
+            ClientSize = new Size(394, 411);
+            Controls.Add(lblTipoConta);
+            Controls.Add(cmbTipoConta);
             Controls.Add(lblCadastrarConta);
             Controls.Add(btnCriarConta);
             Controls.Add(lblConfirmarSenha);
@@ -154,5 +181,7 @@
         private Label lblConfirmarSenha;
         private Button btnCriarConta;
         private Label lblCadastrarConta;
+        private ComboBox cmbTipoConta;
+        private Label lblTipoConta;
     }
 }

@@ -134,6 +134,8 @@ namespace prjAula1
 
                         //fechando leitor
                         leitor.Close();
+
+
                     }
                 }
                 else

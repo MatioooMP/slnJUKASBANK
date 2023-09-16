@@ -137,4 +137,4 @@ C:\Users\Matheus\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prj
 C:\Users\Matheus\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.genruntimeconfig.cache
 C:\Users\Matheus\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\ref\prjAula1.dll
 C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.TelaConta.resources
-C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.Form1.resources
+C:\Users\matheus.mpereira17\source\repos\slnJUKASBANK\prjAula1\obj\Debug\net6.0-windows\prjAula1.TelaDeposito.resources

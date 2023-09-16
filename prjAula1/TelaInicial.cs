@@ -91,7 +91,7 @@ namespace prjAula1
                 menuStrip1.Items[0].Text = "Login";
                 menuStrip1.Items[1].Visible = true;
                 menuStrip1.Items[2].Visible = false;
-                //UsuarioLogado.Deslogar();
+                UsuarioLogado.Deslogar();
             }
         }
 
@@ -111,12 +111,14 @@ namespace prjAula1
 
         private void criarContaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TelaConta CriarConta = new TelaConta();
+            CriarConta.MdiParent = this;
+            CriarConta.Show();
         }
 
         private void saqueToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Form1 TelaDeposito = new Form1();
+            TelaDeposito TelaDeposito = new TelaDeposito();
             TelaDeposito.MdiParent = this;
             TelaDeposito.Show();
         }

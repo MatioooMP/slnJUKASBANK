@@ -21,8 +21,8 @@ namespace DTO
         public string SenhaConta { get; set; }
 
         public string TipoConta { get; set; }
-        
-        
+
+       
     }
 
 }

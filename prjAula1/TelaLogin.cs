@@ -174,12 +174,17 @@ namespace prjAula1
                     menuPrincipal.Items[2].Visible = true;
 
 
-                    MessageBox.Show($"Olá,{UsuarioLogado.NomeCliente}!\n" +
-                        $"Você foi logado na conta {UsuarioLogado.Contas[0].IdCliente.ToString()}\n" +
-                        $"Para trocar de conta, utilize o menu Conta\\Alternar Conta");
-                    //MessageBox.Show($"{CorrentistaLogado.Id.ToString()},{CorrentistaLogado.NomeCorrentista},{CorrentistaLogado.DataNascimento.ToString()},{CorrentistaLogado.Logradouro}," +
-                    //    $"{CorrentistaLogado.Numero},{CorrentistaLogado.Complemento},{CorrentistaLogado.Cidade}," +
-                    //    $"{CorrentistaLogado.Estado},{CorrentistaLogado.Cpf},{CorrentistaLogado.Senha},{CorrentistaLogado.Celular}");
+                    if (UsuarioLogado.Contas.Count == 0)
+                    {
+                        MessageBox.Show($"Olá,{UsuarioLogado.NomeCliente}");
+                    }
+                    else
+                    {
+                       MessageBox.Show($"Olá,{UsuarioLogado.NomeCliente}!\n" +
+                       $"Você foi logado na conta {UsuarioLogado.Contas[0].IdCliente.ToString()}\n" +
+                       $"Para trocar de conta, utilize o menu Conta\\Alternar Conta");
+                    }
+                    
                     this.Close();
                 }
 

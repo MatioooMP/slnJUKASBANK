@@ -1,4 +1,5 @@
-﻿using prjAula1.Classes;
+﻿using DTO;
+using prjAula1.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,8 @@ namespace prjAula1
         {
             try
             {
+
+
                 if (txtSenhaConta.Text == txtConfirmarSenha.Text)
                 {
                     //Criando uma conexão
@@ -39,15 +42,22 @@ namespace prjAula1
                     cmd.Connection = conexao;
 
                     //inserindo parâmetros à procedure
+
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("saldo", txtSaldoConta.Text);
                     cmd.Parameters.AddWithValue("senhaConta", txtSenhaConta.Text);
+                    cmd.Parameters.AddWithValue("idCliente", UsuarioLogado.IdCliente);
+                    cmd.Parameters.AddWithValue("dataCriacaoConta", DateTime.Now);
+                    cmd.Parameters.AddWithValue("statusConta", "Aberto");
+                    cmd.Parameters.AddWithValue("tipoConta", cmbTipoConta.Text);
+
 
 
 
 
                     //abrir a conexão
                     conexao.Open();
+                    UsuarioLogado.ContaLogada = Convert.ToInt32(cmd.ExecuteScalar());
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
                     MessageBox.Show("Conta Cadastrada com sucesso!!!", "Info",
@@ -72,6 +82,11 @@ namespace prjAula1
                 MessageBox.Show(ex.Message,
                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
