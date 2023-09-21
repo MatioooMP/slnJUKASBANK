@@ -34,12 +34,13 @@
             saqueToolStripMenuItem = new ToolStripMenuItem();
             alterarDadosToolStripMenuItem = new ToolStripMenuItem();
             criarContaToolStripMenuItem = new ToolStripMenuItem();
+            alterarContaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastroToolStripMenuItem, saqueToolStripMenuItem, alterarDadosToolStripMenuItem, criarContaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, cadastroToolStripMenuItem, saqueToolStripMenuItem, alterarDadosToolStripMenuItem, criarContaToolStripMenuItem, alterarContaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -83,6 +84,13 @@
             criarContaToolStripMenuItem.Text = "Criar Conta";
             criarContaToolStripMenuItem.Click += criarContaToolStripMenuItem_Click;
             // 
+            // alterarContaToolStripMenuItem
+            // 
+            alterarContaToolStripMenuItem.Name = "alterarContaToolStripMenuItem";
+            alterarContaToolStripMenuItem.Size = new Size(89, 20);
+            alterarContaToolStripMenuItem.Text = "Alterar Conta";
+            alterarContaToolStripMenuItem.Click += alterarContaToolStripMenuItem_Click;
+            // 
             // TelaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -107,5 +115,6 @@
         private ToolStripMenuItem saqueToolStripMenuItem;
         private ToolStripMenuItem alterarDadosToolStripMenuItem;
         private ToolStripMenuItem criarContaToolStripMenuItem;
+        private ToolStripMenuItem alterarContaToolStripMenuItem;
     }
 }

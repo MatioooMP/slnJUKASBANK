@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace prjAula1
 {
-    public partial class TelaDeposito : Form
+    public partial class TelaSaque : Form
     {
-        public TelaDeposito()
+        public TelaSaque()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace prjAula1
                     }
                 }
 
-                if (Convert.ToDecimal(txtSaldoDepositar.Text) > 0 && txtSenhaConfirmar.Text == conta.SenhaConta)
+                if (Convert.ToDecimal(txtSaldoSacar.Text) <= conta.Saldo && txtSenhaConfirmar.Text == conta.SenhaConta)
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
@@ -48,7 +48,7 @@ namespace prjAula1
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Connection = conexao;
 
-                    conta.Saldo = Convert.ToDecimal(txtSaldoDepositar.Text) + conta.Saldo;
+                    conta.Saldo = conta.Saldo - Convert.ToDecimal(txtSaldoSacar.Text) ;
                     //inserindo parâmetros à procedure
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("idConta", UsuarioLogado.ContaLogada);//15
@@ -71,7 +71,7 @@ namespace prjAula1
 
                     cmd.ExecuteNonQuery(); //executa o comando no BD
                     conexao.Close();
-                    MessageBox.Show("Depósito feito com sucesso!!!", "Info",
+                    MessageBox.Show("Saque feito com sucesso!!!", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     UtilUI.LimpaForm(this);
@@ -91,22 +91,6 @@ namespace prjAula1
                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void txtSenhaConfirmar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSaldoDepositar_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void txtSaldoDepositar_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void lblConfirmarSenha_Click(object sender, EventArgs e)
-        {
-        }
     }
-}
+    }
+

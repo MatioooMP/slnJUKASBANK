@@ -84,6 +84,7 @@ namespace prjAula1
 
         private void btnacessar_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 UsuarioLogado.ContaLogada = 0;

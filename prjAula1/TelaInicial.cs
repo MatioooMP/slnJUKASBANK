@@ -122,5 +122,12 @@ namespace prjAula1
             TelaDeposito.MdiParent = this;
             TelaDeposito.Show();
         }
+
+        private void alterarContaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaAlterarConta telaAlterarConta = new TelaAlterarConta();
+            telaAlterarConta.MdiParent = this;
+            telaAlterarConta.Show();
+        }
     }
 }

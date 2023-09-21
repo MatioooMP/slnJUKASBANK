@@ -52,6 +52,7 @@
             txtSaldoDepositar.Name = "txtSaldoDepositar";
             txtSaldoDepositar.Size = new Size(100, 23);
             txtSaldoDepositar.TabIndex = 1;
+            txtSaldoDepositar.TextChanged += txtSaldoDepositar_TextChanged;
             // 
             // lblSaldoDepositar
             // 
@@ -61,6 +62,7 @@
             lblSaldoDepositar.Size = new Size(118, 15);
             lblSaldoDepositar.TabIndex = 2;
             lblSaldoDepositar.Text = "Saldo para Depositar:";
+            lblSaldoDepositar.Click += lblSaldoDepositar_Click;
             // 
             // txtSenhaConfirmar
             // 
@@ -68,6 +70,7 @@
             txtSenhaConfirmar.Name = "txtSenhaConfirmar";
             txtSenhaConfirmar.Size = new Size(100, 23);
             txtSenhaConfirmar.TabIndex = 3;
+            txtSenhaConfirmar.TextChanged += txtSenhaConfirmar_TextChanged;
             // 
             // lblConfirmarSenha
             // 
@@ -77,8 +80,9 @@
             lblConfirmarSenha.Size = new Size(99, 15);
             lblConfirmarSenha.TabIndex = 4;
             lblConfirmarSenha.Text = "Confirmar Senha:";
+            lblConfirmarSenha.Click += lblConfirmarSenha_Click;
             // 
-            // Form1
+            // TelaDeposito
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -89,7 +93,7 @@
             Controls.Add(lblSaldoDepositar);
             Controls.Add(txtSaldoDepositar);
             Controls.Add(btnDepositar);
-            Name = "Form1";
+            Name = "TelaDeposito";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
